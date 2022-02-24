@@ -24,6 +24,9 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let navigationController = UINavigationController()
+        let authCoordinator = AuthCoordinator(navigationController: navigationController)
+        childCoordinator.append(authCoordinator)
+        authCoordinator.start()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }

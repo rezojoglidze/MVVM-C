@@ -7,13 +7,36 @@
 
 import UIKit
 
+protocol LoginFlowDelegate: AnyObject {
+    func successfullyLoggedIn()
+    func failedLoggedIn()
+}
+
+protocol LoginViewInterface: AnyObject {
+    
+}
+
 class LoginViewController: UIViewController {
 
+    var viewModel: LoginViewModel!
+    
+    static func instantiate() -> LoginViewController {
+        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController ?? .init()
+        return viewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func checkUserCredentialsTapped(_ sender: Any) {
+        viewModel.checkUserCredentials(name: "user", pass: "123qwe")
+    }
+}
 
+extension LoginViewController: LoginViewInterface {
+    
 }
 
