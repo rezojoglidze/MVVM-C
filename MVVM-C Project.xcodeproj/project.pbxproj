@@ -13,6 +13,7 @@
 		A97173E927C7617600CE6F61 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97173E827C7617600CE6F61 /* AuthCoordinator.swift */; };
 		A97173EA27C7617600CE6F61 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97173E827C7617600CE6F61 /* AuthCoordinator.swift */; };
 		A97173EB27C7617600CE6F61 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97173E827C7617600CE6F61 /* AuthCoordinator.swift */; };
+		A97173EF27C76AE700CE6F61 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97173EE27C76AE700CE6F61 /* HomeCoordinator.swift */; };
 		A9757DC927C6C62C00916FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757DC827C6C62C00916FD7 /* AppDelegate.swift */; };
 		A9757DCB27C6C62C00916FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */; };
 		A9757DCD27C6C62C00916FD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757DCC27C6C62C00916FD7 /* LoginViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		A97173E327C75FE900CE6F61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A97173E827C7617600CE6F61 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		A97173EE27C76AE700CE6F61 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		A9757DC527C6C62C00916FD7 /* MVVM-C Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757DC827C6C62C00916FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +105,28 @@
 			children = (
 				A97173E327C75FE900CE6F61 /* AppCoordinator.swift */,
 				A97173E827C7617600CE6F61 /* AuthCoordinator.swift */,
+				A97173EE27C76AE700CE6F61 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A97173EC27C7645100CE6F61 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9757DC827C6C62C00916FD7 /* AppDelegate.swift */,
+				A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A97173ED27C7646200CE6F61 /* Resourcess */ = {
+			isa = PBXGroup;
+			children = (
+				A9757DD127C6C62D00916FD7 /* Assets.xcassets */,
+				A9757DD327C6C62D00916FD7 /* LaunchScreen.storyboard */,
+				A9757DD627C6C62D00916FD7 /* Info.plist */,
+			);
+			path = Resourcess;
 			sourceTree = "<group>";
 		};
 		A9757DBC27C6C62C00916FD7 = {
@@ -130,14 +152,11 @@
 		A9757DC727C6C62C00916FD7 /* MVVM-C Project */ = {
 			isa = PBXGroup;
 			children = (
-				A9757DC827C6C62C00916FD7 /* AppDelegate.swift */,
-				A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */,
+				A97173EC27C7645100CE6F61 /* App */,
+				A97173E727C7615400CE6F61 /* Coordinator */,
 				A9757DF827C6C68C00916FD7 /* LoginScreen */,
 				A9757DFD27C6CEFA00916FD7 /* TextsScreen */,
-				A9757DD127C6C62D00916FD7 /* Assets.xcassets */,
-				A9757DD327C6C62D00916FD7 /* LaunchScreen.storyboard */,
-				A9757DD627C6C62D00916FD7 /* Info.plist */,
-				A97173E727C7615400CE6F61 /* Coordinator */,
+				A97173ED27C7646200CE6F61 /* Resourcess */,
 			);
 			path = "MVVM-C Project";
 			sourceTree = "<group>";
@@ -315,6 +334,7 @@
 			files = (
 				A9757DFA27C6C7C500916FD7 /* LoginViewModel.swift in Sources */,
 				A9757DCD27C6C62C00916FD7 /* LoginViewController.swift in Sources */,
+				A97173EF27C76AE700CE6F61 /* HomeCoordinator.swift in Sources */,
 				A9757E0727C6CF5600916FD7 /* TextsViewModel.swift in Sources */,
 				A97173E427C75FE900CE6F61 /* AppCoordinator.swift in Sources */,
 				A9757E0327C6CF4700916FD7 /* TextsViewController.swift in Sources */,
@@ -509,7 +529,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YC9A76K73N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-C Project/Info.plist";
+				INFOPLIST_FILE = "MVVM-C Project/Resourcess/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
@@ -537,7 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YC9A76K73N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-C Project/Info.plist";
+				INFOPLIST_FILE = "MVVM-C Project/Resourcess/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;

@@ -13,10 +13,10 @@ protocol TextsViewModelInterface: AnyObject {
 
 class TextsViewModel {
     
-    weak var textViewInterface: TextsViewInterface?
+    weak var view: TextsViewInterface?
     
-    init(textViewInterface: TextsViewInterface) {
-        self.textViewInterface = textViewInterface
+    init(view: TextsViewInterface) {
+        self.view = view
     }
 }
 

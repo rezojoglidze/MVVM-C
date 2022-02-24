@@ -14,28 +14,22 @@ protocol LoginViewModelInterface: AnyObject {
 
 class LoginViewModel {
     
-    deinit {
-        print("Deinit LoginViewModel")
-    }
-    
     weak var view: LoginViewInterface?
-     var flowDelegate: LoginFlowDelegate?
+    var coordinator: AuthCoordinator?
     
     init(view: LoginViewInterface,
-         flowDelegate: LoginFlowDelegate) {
+         coordinator: AuthCoordinator) {
         self.view = view
-        print("flowDelegate = ", flowDelegate)
-        self.flowDelegate = flowDelegate
+        self.coordinator = coordinator
     }
 }
 
 extension LoginViewModel: LoginViewModelInterface {
     func checkUserCredentials(name: String, pass: String) {
         if name == "user" && pass == "123qwe" {
-            print("flowDelegate?.successfullyLoggedIn()-> ", flowDelegate)
-            flowDelegate?.successfullyLoggedIn()
+            coordinator?.showTextsView()
         } else {
-            flowDelegate?.failedLoggedIn()
+            coordinator?.showAlert(title: "Error!", text: "username or passowrd isnot correct")
         }
     }
 }

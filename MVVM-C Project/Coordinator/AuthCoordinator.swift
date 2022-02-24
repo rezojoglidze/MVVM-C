@@ -19,6 +19,21 @@ class AuthCoordinator: Coordinator {
     
     func start() {
         let loginViewController = LoginViewController.instantiate()
+        let loginViewModel = LoginViewModel(view: loginViewController, coordinator: self)
+        loginViewController.viewModel = loginViewModel
         navigationController.setViewControllers([loginViewController], animated: false)
+    }
+    
+    func showTextsView() {
+        let homeCoordinator = HomeCoordinator(navigationController: navigationController)
+        childCoordinator.append(homeCoordinator)
+        homeCoordinator.start()
+    }
+    
+    func showAlert(title: String, text: String) {
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "გასაგებია", style: .default, handler: nil)
+        alert.addAction(alertAction)
+//        alert.present(navigationController.presentedViewController, animated: true, completion: nil)
     }
 }
