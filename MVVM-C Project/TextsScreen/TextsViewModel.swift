@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+protocol TextsViewModelInterface: AnyObject {
+    
+}
+
+class TextsViewModel {
+    
+    weak var textViewInterface: TextsViewInterface?
+    
+    init(textViewInterface: TextsViewInterface) {
+        self.textViewInterface = textViewInterface
+    }
+}
+
+extension TextsViewModel: TextsViewModelInterface {
+    
+}
