@@ -17,9 +17,13 @@ protocol LoginViewInterface: AnyObject {
 }
 
 class LoginViewController: UIViewController {
-
-    var viewModel: LoginViewModel!
+   
+    deinit{
+        print("Deinit: LoginViewController" )
+    }
     
+    var viewModel: LoginViewModel!
+
     static func instantiate() -> LoginViewController {
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
         let viewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController ?? .init()

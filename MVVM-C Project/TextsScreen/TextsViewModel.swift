@@ -6,20 +6,42 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol TextsViewModelInterface: AnyObject {
-    
+    func viewDidDisappear()
+    func loadTexts()
 }
 
 class TextsViewModel {
     
-    weak var view: TextsViewInterface?
+    deinit{
+        print("Deinit: TextsViewModel")
+    }
     
-    init(view: TextsViewInterface) {
+    weak var view: TextsViewInterface?
+    var coordinator: HomeCoordinator?
+    
+    init(view: TextsViewInterface,
+         coordinator: HomeCoordinator) {
         self.view = view
+        self.coordinator = coordinator
     }
 }
 
 extension TextsViewModel: TextsViewModelInterface {
+    func viewDidDisappear() {
+        coordinator?.didFinishWork()
+    }
     
+    func loadTexts() {
+        NetworkManager().getTexts { result in
+            switch result {
+            case .success(let texts):
+                print(texts)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

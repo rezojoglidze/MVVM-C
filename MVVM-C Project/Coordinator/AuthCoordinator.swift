@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class AuthCoordinator: Coordinator {
-    private(set) var childCoordinator: [Coordinator] = []
+    private(set) var childCoordinators: [Coordinator] = []
     
     private let navigationController: UINavigationController
     
@@ -26,7 +26,8 @@ class AuthCoordinator: Coordinator {
     
     func showTextsView() {
         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
-        childCoordinator.append(homeCoordinator)
+        childCoordinators.append(homeCoordinator)
+        homeCoordinator.parentCoordinator = self
         homeCoordinator.start()
     }
     
@@ -35,5 +36,14 @@ class AuthCoordinator: Coordinator {
         let alertAction = UIAlertAction(title: "გასაგებია", style: .default, handler: nil)
         alert.addAction(alertAction)
 //        alert.present(navigationController.presentedViewController, animated: true, completion: nil)
+    }
+    
+    func childDidFinish(_ childCoordinator: Coordinator) {
+    
+        if let index = childCoordinators.firstIndex(where: { coordinator -> Bool in
+            return childCoordinator === coordinator
+        }) {
+            childCoordinators.remove(at: index)
+        }
     }
 }

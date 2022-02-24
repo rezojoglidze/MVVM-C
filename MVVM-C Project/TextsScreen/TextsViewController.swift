@@ -12,7 +12,11 @@ protocol TextsViewInterface: AnyObject {
 }
 
 class TextsViewController: UIViewController {
-
+    
+    deinit{
+        print("Deinit: TextsViewController")
+    }
+    
     var viewModel: TextsViewModelInterface!
     
     static func instatiate() -> TextsViewController {
@@ -23,6 +27,12 @@ class TextsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.loadTexts()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewModel.viewDidDisappear()
     }
 }
 

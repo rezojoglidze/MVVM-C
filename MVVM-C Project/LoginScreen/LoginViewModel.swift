@@ -14,6 +14,10 @@ protocol LoginViewModelInterface: AnyObject {
 
 class LoginViewModel {
     
+    deinit{
+        print("Deinit: LoginViewModel")
+    }
+    
     weak var view: LoginViewInterface?
     var coordinator: AuthCoordinator?
     

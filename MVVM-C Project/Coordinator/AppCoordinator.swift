@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-protocol Coordinator {
-    var childCoordinator: [Coordinator] { get }
+protocol Coordinator: AnyObject {
+    var childCoordinators: [Coordinator] { get }
     func start()
 }
 
 final class AppCoordinator: Coordinator {
-    private(set) var childCoordinator: [Coordinator] = []
+    private(set) var childCoordinators: [Coordinator] = []
     
     private let window: UIWindow
     
@@ -25,7 +25,7 @@ final class AppCoordinator: Coordinator {
     func start() {
         let navigationController = UINavigationController()
         let authCoordinator = AuthCoordinator(navigationController: navigationController)
-        childCoordinator.append(authCoordinator)
+        childCoordinators.append(authCoordinator)
         authCoordinator.start()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
