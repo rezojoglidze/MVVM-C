@@ -8,12 +8,11 @@
 import Foundation
 
 class NetworkManager {
-    let textsUrl = URL(string: "https://www.random.org/strings/?num=10&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new")
-  
     
-
+    static let shared = NetworkManager()
+    
     func getTexts(completionHandler: @escaping (Result<[String], Error>) -> Void) {
-        guard let url = textsUrl else {return}
+        guard let url = Constants.textsUrl else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 do {

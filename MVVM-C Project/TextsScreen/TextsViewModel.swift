@@ -35,7 +35,7 @@ extension TextsViewModel: TextsViewModelInterface {
     }
     
     func loadTexts() {
-        NetworkManager().getTexts { result in
+        NetworkManager.shared.getTexts { result in
             switch result {
             case .success(let texts):
                 print(texts)
