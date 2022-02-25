@@ -23,7 +23,7 @@ class NetworkRequestTest: XCTestCase {
         try super.tearDownWithError()
     }
     
-    func testGetTextsMethod() {
+    func testGetTextsMethodCompletes() {
         //given
         guard let url = Constants.textsUrl else { return }
         let promise = expectation(description: "Completion handler invoked")
