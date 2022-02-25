@@ -154,6 +154,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A92EB16F27C8BB61006B7E9B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A92EB16B27C8B707006B7E9B /* Constants.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		A97173E727C7615400CE6F61 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +177,6 @@
 			children = (
 				A9757DC827C6C62C00916FD7 /* AppDelegate.swift */,
 				A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */,
-				A92EB16B27C8B707006B7E9B /* Constants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 		A9757DC727C6C62C00916FD7 /* MVVM-C Project */ = {
 			isa = PBXGroup;
 			children = (
+				A92EB16F27C8BB61006B7E9B /* Core */,
 				A97173EC27C7645100CE6F61 /* App */,
 				A97173E727C7615400CE6F61 /* Coordinator */,
 				A92EB14327C806F6006B7E9B /* NetworkManager.swift */,
