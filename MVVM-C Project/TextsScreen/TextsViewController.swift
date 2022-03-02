@@ -48,7 +48,6 @@ class TextsViewController: UIViewController {
 
 extension TextsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(viewModel.items.count)
         return viewModel.items.count
     }
     

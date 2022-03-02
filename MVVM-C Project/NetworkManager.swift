@@ -12,7 +12,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     func getTexts(completionHandler: @escaping (Result<[String], Error>) -> Void) {
-        guard let url = Constants.textsUrl else { return }
+        guard let url = Constants.getTextsUrl() else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data, let texts = String(data: data, encoding: .utf8) {
                 // error: <EXPR>:3:31: error: unterminated string literal texts.components(separatedBy: "\")
