@@ -22,6 +22,9 @@ class LoginViewController: UIViewController {
         print("Deinit: LoginViewController" )
     }
     
+    @IBOutlet private weak var usernameTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    
     var viewModel: LoginViewModel!
 
     static func instantiate() -> LoginViewController {
@@ -35,7 +38,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func checkUserCredentialsTapped(_ sender: Any) {
-        viewModel.checkUserCredentials(name: "user", pass: "123qwe")
+        viewModel.checkUserCredentials(name: usernameTextField.text ?? "", pass: passwordTextField.text ?? "")
     }
 }
 

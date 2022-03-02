@@ -33,9 +33,10 @@ class AuthCoordinator: Coordinator {
     
     func showAlert(title: String, text: String) {
         let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "გასაგებია", style: .default, handler: nil)
+        let alertAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
         alert.addAction(alertAction)
-//        alert.present(navigationController.presentedViewController, animated: true, completion: nil)
+        guard let presentedViewController = navigationController.visibleViewController else { return }
+        presentedViewController.present(alert, animated: true, completion: nil)
     }
     
     func childDidFinish(_ childCoordinator: Coordinator) {

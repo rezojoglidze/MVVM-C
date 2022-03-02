@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import RxSwift
 
 protocol TextsViewModelInterface: AnyObject {
     func viewDidDisappear()
     func loadTexts()
+    var items: [String] { get }
 }
 
 class TextsViewModel {
@@ -21,6 +21,7 @@ class TextsViewModel {
     
     weak var view: TextsViewInterface?
     var coordinator: HomeCoordinator?
+    var items: [String] = []
     
     init(view: TextsViewInterface,
          coordinator: HomeCoordinator) {
@@ -35,12 +36,15 @@ extension TextsViewModel: TextsViewModelInterface {
     }
     
     func loadTexts() {
-        NetworkManager.shared.getTexts { result in
+        NetworkManager.shared.getTexts {[weak self] result in
             switch result {
             case .success(let texts):
-                print(texts)
+                self?.items = texts
+                DispatchQueue.main.sync {
+                    self?.view?.reloadData()
+                }
             case .failure(let error):
-                print(error)
+                self?.coordinator?.showAlert(title: "Error", text: error.localizedDescription)
             }
         }
     }

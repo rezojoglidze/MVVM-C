@@ -14,13 +14,12 @@ class NetworkManager {
     func getTexts(completionHandler: @escaping (Result<[String], Error>) -> Void) {
         guard let url = Constants.textsUrl else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data {
-                do {
-                    let texts = try JSONDecoder().decode([String].self, from: data)
-                    completionHandler(.success(texts))
-                } catch let error {
-                    completionHandler(.failure(error))
-                }
+            if let data = data, let texts = String(data: data, encoding: .utf8) {
+                // error: <EXPR>:3:31: error: unterminated string literal texts.components(separatedBy: "\")
+                //So I decide to split string with "n"
+                completionHandler(.success(texts.components(separatedBy: "n")))
+            } else {
+                completionHandler(.failure(BasicError.unknownError))
             }
         }.resume()
     }

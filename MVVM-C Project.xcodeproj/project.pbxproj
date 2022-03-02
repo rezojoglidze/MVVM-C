@@ -47,6 +47,15 @@
 		A9757E0727C6CF5600916FD7 /* TextsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757E0627C6CF5600916FD7 /* TextsViewModel.swift */; };
 		A9757E0827C6CF5600916FD7 /* TextsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757E0627C6CF5600916FD7 /* TextsViewModel.swift */; };
 		A9757E0927C6CF5600916FD7 /* TextsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757E0627C6CF5600916FD7 /* TextsViewModel.swift */; };
+		A975927D27CFA27D00A7BFFB /* BasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975927C27CFA27D00A7BFFB /* BasicError.swift */; };
+		A975927E27CFA27D00A7BFFB /* BasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975927C27CFA27D00A7BFFB /* BasicError.swift */; };
+		A975927F27CFA27D00A7BFFB /* BasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975927C27CFA27D00A7BFFB /* BasicError.swift */; };
+		A975928327CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */; };
+		A975928427CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */; };
+		A975928527CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */; };
+		A975928627CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
+		A975928727CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
+		A975928827CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
 		B566778240EB93FD41A39BF1 /* Pods_MVVM_C_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0060D64E5956F50C452E54 /* Pods_MVVM_C_Project.framework */; };
 		CC127F5781C667515FB02ED5 /* Pods_MVVM_C_Project_MVVM_C_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAD2175BB3AE7473C8666C3 /* Pods_MVVM_C_Project_MVVM_C_ProjectUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +107,9 @@
 		A9757DFE27C6CF3500916FD7 /* Texts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Texts.storyboard; sourceTree = "<group>"; };
 		A9757E0227C6CF4700916FD7 /* TextsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsViewController.swift; sourceTree = "<group>"; };
 		A9757E0627C6CF5600916FD7 /* TextsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsViewModel.swift; sourceTree = "<group>"; };
+		A975927C27CFA27D00A7BFFB /* BasicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicError.swift; sourceTree = "<group>"; };
+		A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsScreenTableViewCell.swift; sourceTree = "<group>"; };
+		A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextsScreenTableViewCell.xib; sourceTree = "<group>"; };
 		AA4088FD3FA28197B472AC2F /* Pods-MVVM-C Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C Project.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C Project/Pods-MVVM-C Project.debug.xcconfig"; sourceTree = "<group>"; };
 		AB0060D64E5956F50C452E54 /* Pods_MVVM_C_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E602199BE336125008EFE8BF /* Pods-MVVM-C ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C ProjectTests/Pods-MVVM-C ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A92EB16B27C8B707006B7E9B /* Constants.swift */,
+				A975927C27CFA27D00A7BFFB /* BasicError.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -258,11 +271,21 @@
 		A9757DFD27C6CEFA00916FD7 /* TextsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A975928027CFA38100A7BFFB /* TextsScreenCell */,
 				A9757DFE27C6CF3500916FD7 /* Texts.storyboard */,
 				A9757E0227C6CF4700916FD7 /* TextsViewController.swift */,
 				A9757E0627C6CF5600916FD7 /* TextsViewModel.swift */,
 			);
 			path = TextsScreen;
+			sourceTree = "<group>";
+		};
+		A975928027CFA38100A7BFFB /* TextsScreenCell */ = {
+			isa = PBXGroup;
+			children = (
+				A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */,
+				A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */,
+			);
+			path = TextsScreenCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +299,6 @@
 				A9757DC127C6C62C00916FD7 /* Sources */,
 				A9757DC227C6C62C00916FD7 /* Frameworks */,
 				A9757DC327C6C62C00916FD7 /* Resources */,
-				FD8F889A021A89C53C28AE96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,7 +336,6 @@
 				A9757DE127C6C62D00916FD7 /* Sources */,
 				A9757DE227C6C62D00916FD7 /* Frameworks */,
 				A9757DE327C6C62D00916FD7 /* Resources */,
-				A792AF75CBECB9E7DEE57982 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A975928627CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */,
 				A9757DD527C6C62D00916FD7 /* LaunchScreen.storyboard in Resources */,
 				A9757DD227C6C62D00916FD7 /* Assets.xcassets in Resources */,
 				A9757DD027C6C62C00916FD7 /* Login.storyboard in Resources */,
@@ -385,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A975928727CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */,
 				A9757E0027C6CF3500916FD7 /* Texts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A975928827CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */,
 				A9757E0127C6CF3500916FD7 /* Texts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,40 +490,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A792AF75CBECB9E7DEE57982 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project-MVVM-C ProjectUITests/Pods-MVVM-C Project-MVVM-C ProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project-MVVM-C ProjectUITests/Pods-MVVM-C Project-MVVM-C ProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project-MVVM-C ProjectUITests/Pods-MVVM-C Project-MVVM-C ProjectUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD8F889A021A89C53C28AE96 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project/Pods-MVVM-C Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project/Pods-MVVM-C Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-C Project/Pods-MVVM-C Project-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -514,8 +504,10 @@
 				A97173EF27C76AE700CE6F61 /* HomeCoordinator.swift in Sources */,
 				A9757E0727C6CF5600916FD7 /* TextsViewModel.swift in Sources */,
 				A97173E427C75FE900CE6F61 /* AppCoordinator.swift in Sources */,
+				A975927D27CFA27D00A7BFFB /* BasicError.swift in Sources */,
 				A9757E0327C6CF4700916FD7 /* TextsViewController.swift in Sources */,
 				A9757DC927C6C62C00916FD7 /* AppDelegate.swift in Sources */,
+				A975928327CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */,
 				A97173E927C7617600CE6F61 /* AuthCoordinator.swift in Sources */,
 				A9757DCB27C6C62C00916FD7 /* SceneDelegate.swift in Sources */,
 			);
@@ -532,8 +524,10 @@
 				A97173EA27C7617600CE6F61 /* AuthCoordinator.swift in Sources */,
 				A97173E527C75FE900CE6F61 /* AppCoordinator.swift in Sources */,
 				A9757DE027C6C62D00916FD7 /* MVVM_C_ProjectTests.swift in Sources */,
+				A975927E27CFA27D00A7BFFB /* BasicError.swift in Sources */,
 				A92EB14927C82126006B7E9B /* HomeCoordinator.swift in Sources */,
 				A9757E0827C6CF5600916FD7 /* TextsViewModel.swift in Sources */,
+				A975928427CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */,
 				A9757E0427C6CF4700916FD7 /* TextsViewController.swift in Sources */,
 				A92EB14B27C8213A006B7E9B /* LoginViewModel.swift in Sources */,
 			);
@@ -550,8 +544,10 @@
 				A97173E627C75FE900CE6F61 /* AppCoordinator.swift in Sources */,
 				A92EB14627C806F6006B7E9B /* NetworkManager.swift in Sources */,
 				A92EB14827C82123006B7E9B /* LoginViewController.swift in Sources */,
+				A975927F27CFA27D00A7BFFB /* BasicError.swift in Sources */,
 				A9757DEA27C6C62D00916FD7 /* MVVM_C_ProjectUITests.swift in Sources */,
 				A97173EB27C7617600CE6F61 /* AuthCoordinator.swift in Sources */,
+				A975928527CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */,
 				A92EB14C27C8213A006B7E9B /* LoginViewModel.swift in Sources */,
 				A9757E0927C6CF5600916FD7 /* TextsViewModel.swift in Sources */,
 			);

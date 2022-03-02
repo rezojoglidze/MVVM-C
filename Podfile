@@ -6,8 +6,6 @@ target 'MVVM-C Project' do
   use_frameworks!
 
   # Pods for MVVM-C Project
-    pod 'RxSwift', '6.5.0'
-    pod 'RxCocoa', '6.5.0'
 
   target 'MVVM-C ProjectTests' do
     inherit! :search_paths
