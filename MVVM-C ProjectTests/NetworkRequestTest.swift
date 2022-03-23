@@ -25,7 +25,7 @@ class NetworkRequestTest: XCTestCase {
     
     func testGetTextsMethodCompletes() {
         //given
-        guard let url = Constants.textsUrl else { return }
+        guard let url = Constants.getTextsUrl() else { return }
         let promise = expectation(description: "Completion handler invoked")
         var statusCode: Int?
         var responseError: Error?

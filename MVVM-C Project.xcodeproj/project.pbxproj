@@ -55,6 +55,7 @@
 		A975928627CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
 		A975928727CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
 		A975928827CFA3A700A7BFFB /* TextsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */; };
+		A97B3B3C27D0082F001E7A15 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97B3B3B27D0082F001E7A15 /* LoginViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		A975927C27CFA27D00A7BFFB /* BasicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicError.swift; sourceTree = "<group>"; };
 		A975928127CFA3A700A7BFFB /* TextsScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsScreenTableViewCell.swift; sourceTree = "<group>"; };
 		A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextsScreenTableViewCell.xib; sourceTree = "<group>"; };
+		A97B3B3B27D0082F001E7A15 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,13 @@
 			children = (
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A923C7BD27D4FEF300E929B7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		A92EB16F27C8BB61006B7E9B /* Core */ = {
@@ -197,10 +206,11 @@
 		A9757DC727C6C62C00916FD7 /* MVVM-C Project */ = {
 			isa = PBXGroup;
 			children = (
+				A923C7BD27D4FEF300E929B7 /* Response */,
 				A92EB16F27C8BB61006B7E9B /* Core */,
 				A97173EC27C7645100CE6F61 /* App */,
 				A97173E727C7615400CE6F61 /* Coordinator */,
-				A92EB14327C806F6006B7E9B /* NetworkManager.swift */,
+				A99237B127D151C9000FDF28 /* NetworkManager */,
 				A9757DF827C6C68C00916FD7 /* LoginScreen */,
 				A9757DFD27C6CEFA00916FD7 /* TextsScreen */,
 				A97173ED27C7646200CE6F61 /* Resourcess */,
@@ -213,6 +223,7 @@
 			children = (
 				A92EB16927C8B5C6006B7E9B /* NetworkRequestTest.swift */,
 				A9757DDF27C6C62D00916FD7 /* MVVM_C_ProjectTests.swift */,
+				A97B3B3B27D0082F001E7A15 /* LoginViewModelTest.swift */,
 			);
 			path = "MVVM-C ProjectTests";
 			sourceTree = "<group>";
@@ -254,6 +265,14 @@
 				A975928227CFA3A700A7BFFB /* TextsScreenTableViewCell.xib */,
 			);
 			path = TextsScreenCell;
+			sourceTree = "<group>";
+		};
+		A99237B127D151C9000FDF28 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A92EB14327C806F6006B7E9B /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +444,7 @@
 				A9757E0827C6CF5600916FD7 /* TextsViewModel.swift in Sources */,
 				A975928427CFA3A700A7BFFB /* TextsScreenTableViewCell.swift in Sources */,
 				A9757E0427C6CF4700916FD7 /* TextsViewController.swift in Sources */,
+				A97B3B3C27D0082F001E7A15 /* LoginViewModelTest.swift in Sources */,
 				A92EB14B27C8213A006B7E9B /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
