@@ -130,13 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A923C7BD27D4FEF300E929B7 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
 		A92EB16F27C8BB61006B7E9B /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +191,6 @@
 		A9757DC727C6C62C00916FD7 /* MVVM-C Project */ = {
 			isa = PBXGroup;
 			children = (
-				A923C7BD27D4FEF300E929B7 /* Response */,
 				A92EB16F27C8BB61006B7E9B /* Core */,
 				A97173EC27C7645100CE6F61 /* App */,
 				A97173E727C7615400CE6F61 /* Coordinator */,
