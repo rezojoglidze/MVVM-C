@@ -5,27 +5,7 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000347">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="1: git_branch" time="0.021357">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="2: get_version_number" time="0.059787">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="3: slack" time="0.475739">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="4: slack" time="0.530047">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000361">
         
       </testcase>
     

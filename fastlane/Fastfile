@@ -20,7 +20,7 @@ platform :ios do
    desc "Runs all the tests"
    lane :test_application do
        begin
-           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C Project.xcodeproj"))
+           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C_Project.xcodeproj"))
            test_lane()
        rescue => exception
            on_error(exception)
@@ -29,14 +29,14 @@ platform :ios do
 end
 
 def test_lane
-  run_tests(scheme: "MVVM-C Project",
+  run_tests(scheme: "MVVM-C_Project",
             slack_url: "https://hooks.slack.com/services/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")
 end
 
 #Build Lane
 lane :build_application do
        begin
-           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C Project.xcodeproj"))
+           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C_Project.xcodeproj"))
            build_lane()
        rescue => exception
            on_error(exception)
@@ -45,7 +45,7 @@ end
 
 
 def build_lane
-    build_app(scheme: "MVVM-C Project", workspace: "MVVM-C Project.xcworkspace")
+    build_app(scheme: "MVVM-C_Project", workspace: "MVVM-C_Project.xcworkspace")
 end
 
 #Error
@@ -53,21 +53,20 @@ def on_error(exception)
 slack(
    message: "Lane failed with exception : #{exception}",
    success: false,
-   slack_url: "https://hooks.slack.com/services/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",
-)
+   slack_url: "https://hooks.slack.com/services/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")
 end
 
 //
 def alert_by_action(actionType, branchName, version)
 slack(
    message: "Started #{actionType} branchName: #{branchName}, version: #{version}",
-   slack_url: "https://hooks.slack.com/services/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",
+   slack_url: "https://hooks.slack.com/services/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",
    default_payloads: [:git_branch, :last_git_commit_message],
    attachment_properties: {
        fields: [
            {
                title: "Build number",
-               value: ENV["BUILD_NUMBER"],
+               value: ENV["BUILD_NUMBER_REPOSITORY"],
            }
        ]
    }

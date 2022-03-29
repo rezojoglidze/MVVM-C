@@ -82,7 +82,7 @@
 		A97173E327C75FE900CE6F61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A97173E827C7617600CE6F61 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		A97173EE27C76AE700CE6F61 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		A9757DC527C6C62C00916FD7 /* MVVM-C Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9757DC527C6C62C00916FD7 /* MVVM-C_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C_Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757DC827C6C62C00916FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9757DCA27C6C62C00916FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9757DCC27C6C62C00916FD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 		A9757DD127C6C62D00916FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9757DD427C6C62D00916FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9757DD627C6C62D00916FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9757DDB27C6C62D00916FD7 /* MVVM-C ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9757DDB27C6C62D00916FD7 /* MVVM-C_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C_ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757DDF27C6C62D00916FD7 /* MVVM_C_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_ProjectTests.swift; sourceTree = "<group>"; };
-		A9757DE527C6C62D00916FD7 /* MVVM-C ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9757DE527C6C62D00916FD7 /* MVVM-C_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C_ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757DE927C6C62D00916FD7 /* MVVM_C_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_ProjectUITests.swift; sourceTree = "<group>"; };
 		A9757DEB27C6C62D00916FD7 /* MVVM_C_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9757DF927C6C7C500916FD7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -188,9 +188,9 @@
 		A9757DC627C6C62C00916FD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9757DC527C6C62C00916FD7 /* MVVM-C Project.app */,
-				A9757DDB27C6C62D00916FD7 /* MVVM-C ProjectTests.xctest */,
-				A9757DE527C6C62D00916FD7 /* MVVM-C ProjectUITests.xctest */,
+				A9757DC527C6C62C00916FD7 /* MVVM-C_Project.app */,
+				A9757DDB27C6C62D00916FD7 /* MVVM-C_ProjectTests.xctest */,
+				A9757DE527C6C62D00916FD7 /* MVVM-C_ProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,9 +270,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9757DC427C6C62C00916FD7 /* MVVM-C Project */ = {
+		A9757DC427C6C62C00916FD7 /* MVVM-C_Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9757DEF27C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C Project" */;
+			buildConfigurationList = A9757DEF27C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_Project" */;
 			buildPhases = (
 				A9757DC127C6C62C00916FD7 /* Sources */,
 				A9757DC227C6C62C00916FD7 /* Frameworks */,
@@ -282,14 +282,14 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM-C Project";
+			name = "MVVM-C_Project";
 			productName = "MVVM-C Project";
-			productReference = A9757DC527C6C62C00916FD7 /* MVVM-C Project.app */;
+			productReference = A9757DC527C6C62C00916FD7 /* MVVM-C_Project.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9757DDA27C6C62D00916FD7 /* MVVM-C ProjectTests */ = {
+		A9757DDA27C6C62D00916FD7 /* MVVM-C_ProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9757DF227C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C ProjectTests" */;
+			buildConfigurationList = A9757DF227C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_ProjectTests" */;
 			buildPhases = (
 				A9757DD727C6C62D00916FD7 /* Sources */,
 				A9757DD827C6C62D00916FD7 /* Frameworks */,
@@ -300,14 +300,14 @@
 			dependencies = (
 				A9757DDD27C6C62D00916FD7 /* PBXTargetDependency */,
 			);
-			name = "MVVM-C ProjectTests";
+			name = "MVVM-C_ProjectTests";
 			productName = "MVVM-C ProjectTests";
-			productReference = A9757DDB27C6C62D00916FD7 /* MVVM-C ProjectTests.xctest */;
+			productReference = A9757DDB27C6C62D00916FD7 /* MVVM-C_ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9757DE427C6C62D00916FD7 /* MVVM-C ProjectUITests */ = {
+		A9757DE427C6C62D00916FD7 /* MVVM-C_ProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9757DF527C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C ProjectUITests" */;
+			buildConfigurationList = A9757DF527C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_ProjectUITests" */;
 			buildPhases = (
 				A9757DE127C6C62D00916FD7 /* Sources */,
 				A9757DE227C6C62D00916FD7 /* Frameworks */,
@@ -318,9 +318,9 @@
 			dependencies = (
 				A9757DE727C6C62D00916FD7 /* PBXTargetDependency */,
 			);
-			name = "MVVM-C ProjectUITests";
+			name = "MVVM-C_ProjectUITests";
 			productName = "MVVM-C ProjectUITests";
-			productReference = A9757DE527C6C62D00916FD7 /* MVVM-C ProjectUITests.xctest */;
+			productReference = A9757DE527C6C62D00916FD7 /* MVVM-C_ProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +346,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9757DC027C6C62C00916FD7 /* Build configuration list for PBXProject "MVVM-C Project" */;
+			buildConfigurationList = A9757DC027C6C62C00916FD7 /* Build configuration list for PBXProject "MVVM-C_Project" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -359,9 +359,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9757DC427C6C62C00916FD7 /* MVVM-C Project */,
-				A9757DDA27C6C62D00916FD7 /* MVVM-C ProjectTests */,
-				A9757DE427C6C62D00916FD7 /* MVVM-C ProjectUITests */,
+				A9757DC427C6C62C00916FD7 /* MVVM-C_Project */,
+				A9757DDA27C6C62D00916FD7 /* MVVM-C_ProjectTests */,
+				A9757DE427C6C62D00916FD7 /* MVVM-C_ProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,12 +466,12 @@
 /* Begin PBXTargetDependency section */
 		A9757DDD27C6C62D00916FD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9757DC427C6C62C00916FD7 /* MVVM-C Project */;
+			target = A9757DC427C6C62C00916FD7 /* MVVM-C_Project */;
 			targetProxy = A9757DDC27C6C62D00916FD7 /* PBXContainerItemProxy */;
 		};
 		A9757DE727C6C62D00916FD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9757DC427C6C62C00916FD7 /* MVVM-C Project */;
+			target = A9757DC427C6C62C00916FD7 /* MVVM-C_Project */;
 			targetProxy = A9757DE627C6C62D00916FD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -693,7 +693,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C Project.app/MVVM-C Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C_Project.app/MVVM-C_Project";
 			};
 			name = Debug;
 		};
@@ -718,7 +718,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C Project.app/MVVM-C Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C_Project.app/MVVM-C_Project";
 			};
 			name = Release;
 		};
@@ -771,7 +771,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9757DC027C6C62C00916FD7 /* Build configuration list for PBXProject "MVVM-C Project" */ = {
+		A9757DC027C6C62C00916FD7 /* Build configuration list for PBXProject "MVVM-C_Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9757DED27C6C62D00916FD7 /* Debug */,
@@ -780,7 +780,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9757DEF27C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C Project" */ = {
+		A9757DEF27C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9757DF027C6C62D00916FD7 /* Debug */,
@@ -789,7 +789,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9757DF227C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C ProjectTests" */ = {
+		A9757DF227C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_ProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9757DF327C6C62D00916FD7 /* Debug */,
@@ -798,7 +798,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9757DF527C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C ProjectUITests" */ = {
+		A9757DF527C6C62D00916FD7 /* Build configuration list for PBXNativeTarget "MVVM-C_ProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9757DF627C6C62D00916FD7 /* Debug */,
