@@ -20,7 +20,7 @@ platform :ios do
    desc "Runs all the tests"
    lane :test_application do
        begin
-           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C_Project.xcodeproj"))
+           alert_by_action("testing", git_branch, get_version_number(xcodeproj: "MVVM-C Project.xcodeproj"))
            test_lane()
        rescue => exception
            on_error(exception)
@@ -29,14 +29,14 @@ platform :ios do
 end
 
 def test_lane
-  run_tests(scheme: "MVVM-C_Project",
-            slack_url: "https://hooks.slack.com/services/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")
+  run_tests(scheme: "MVVM-C Project",
+            slack_url: "https://hooks.slack.com/services/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")
 end
 
 #Build Lane
 lane :build_application do
        begin
-           alert_by_action(1, git_branch, get_version_number(xcodeproj: "MVVM-C_Project.xcodeproj"))
+           alert_by_action("building", git_branch, get_version_number(xcodeproj: "MVVM-C Project.xcodeproj"))
            build_lane()
        rescue => exception
            on_error(exception)
@@ -45,30 +45,22 @@ end
 
 
 def build_lane
-    build_app(scheme: "MVVM-C_Project", workspace: "MVVM-C_Project.xcworkspace")
+  build_app(xcargs: "-allowProvisioningUpdates")
+
 end
 
 #Error
 def on_error(exception)
 slack(
-   message: "Lane failed with exception : #{exception}",
+   message: "Lane failed with exception : #{exception} version: #{get_version_number(xcodeproj: "MVVM-C Project.xcodeproj")}",
    success: false,
-   slack_url: "https://hooks.slack.com/services/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")
+   slack_url: "https://hooks.slack.com/services/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")
 end
 
 //
 def alert_by_action(actionType, branchName, version)
 slack(
    message: "Started #{actionType} branchName: #{branchName}, version: #{version}",
-   slack_url: "https://hooks.slack.com/services/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",
-   default_payloads: [:git_branch, :last_git_commit_message],
-   attachment_properties: {
-       fields: [
-           {
-               title: "Build number",
-               value: ENV["BUILD_NUMBER_REPOSITORY"],
-           }
-       ]
-   }
+   slack_url: "https://hooks.slack.com/services/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",
 )
 end 
