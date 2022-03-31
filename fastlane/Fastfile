@@ -30,7 +30,7 @@ end
 
 def test_lane
   run_tests(scheme: "MVVM-C Project",
-            slack_url: "https://hooks.slack.com/services/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")
+            slack_url: "https://hooks.slack.com/services/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")
 end
 
 #Build Lane
@@ -46,8 +46,15 @@ end
 
 #I have free apple developer account so I can't run build_app...
 def build_lane
-   scan(scheme: "MVVM-C Project")
+   #scan(scheme: "MVVM-C Project")
   #build_app(scheme: "MVVM-C Project")
+build_app(
+            configuration: "Debug",
+            export_method: "development",
+            scheme:"MVVM-C Project",
+            skip_codesigning: true,
+            skip_archive: true
+        )
 end
 
 #Error
@@ -55,13 +62,13 @@ def on_error(exception)
 slack(
    message: "Lane failed with exception : #{exception} version: #{get_version_number(xcodeproj: "MVVM-C Project.xcodeproj")}",
    success: false,
-   slack_url: "https://hooks.slack.com/services/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")
+   slack_url: "https://hooks.slack.com/services/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")
 end
 
 //
 def alert_by_action(actionType, branchName, version)
 slack(
    message: "Started #{actionType} branchName: #{branchName}, version: #{version}",
-   slack_url: "https://hooks.slack.com/services/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",
+   slack_url: "https://hooks.slack.com/services/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",
 )
 end 

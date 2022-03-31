@@ -1,29 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='MVVM-C ProjectTests.xctest' tests='16' failures='0'>
-  <testsuite name='MVVM_C_ProjectUITests.MVVM_C_ProjectUITests' tests='2' failures='0'>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITests' name='testExample' time='2.463'/>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITests' name='testLaunchPerformance' time='89.131'/>
+<testsuites name='MVVM-C ProjectTests.xctest' tests='15' failures='0'>
+  <testsuite name='MVVM_C_ProjectUITests.MVVM_C_ProjectUITests' tests='1' failures='0'>
+    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITests' name='testExample' time='2.533'/>
   </testsuite>
   <testsuite name='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' tests='4' failures='0'>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='5.610'/>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='7.170'/>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='5.450'/>
-    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='5.057'/>
+    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='4.325'/>
+    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='7.610'/>
+    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='5.322'/>
+    <testcase classname='MVVM_C_ProjectUITests.MVVM_C_ProjectUITestsLaunchTests' name='testLaunch' time='7.210'/>
   </testsuite>
   <testsuite name='MVVM_C_ProjectTests.LoginViewModelTest' tests='8' failures='0'>
-    <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnCorrectWarningForLowercaselessPass' time='0.005'/>
+    <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnCorrectWarningForLowercaselessPass' time='0.006'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnCorrectWarningForNumberslessPass' time='0.002'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnCorrectWarningForShortPassword' time='0.002'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnCorrectWarningForUppercaselessPass' time='0.002'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_CheckValidPasswordShouldReturnNilForCorrectPassword' time='0.002'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_IsValidEmailShouldReturnFalseForIncorrectEmails' time='0.002'/>
     <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_IsValidEmailShouldReturnTrueForCorrectEmails' time='0.002'/>
-    <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_LoginViewModelInitialization' time='0.003'/>
+    <testcase classname='MVVM_C_ProjectTests.LoginViewModelTest' name='test_LoginViewModelInitialization' time='0.002'/>
   </testsuite>
   <testsuite name='MVVM_C_ProjectTests.MVVM_C_ProjectTests' tests='1' failures='0'>
     <testcase classname='MVVM_C_ProjectTests.MVVM_C_ProjectTests' name='testAllWordLoaded' time='0.001'/>
   </testsuite>
   <testsuite name='MVVM_C_ProjectTests.NetworkRequestTest' tests='1' failures='0'>
-    <testcase classname='MVVM_C_ProjectTests.NetworkRequestTest' name='testGetTextsMethodCompletes' time='0.450'/>
+    <testcase classname='MVVM_C_ProjectTests.NetworkRequestTest' name='testGetTextsMethodCompletes' time='0.777'/>
   </testsuite>
 </testsuites>
