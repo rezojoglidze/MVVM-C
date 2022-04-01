@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
     
     static func getTextsUrl() -> URL? {
-        var components = URLComponents()
+        var components = URLComponents() 
         components.scheme = "https"
         components.host = "www.random.org"
         components.path = "/strings/"
